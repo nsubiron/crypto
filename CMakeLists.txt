@@ -7,10 +7,10 @@ include_directories("${CRYPTO_ROOT_PATH}/source")
 
 # Define targets.
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")
-  set(Crypto_Lib_Target cryptod)
+  set(Crypto_Lib_Target wcryptod)
   set(Crypto_Test_Target crypto_test_debug)
 else ()
-  set(Crypto_Lib_Target crypto)
+  set(Crypto_Lib_Target wcrypto)
   set(Crypto_Test_Target crypto_test_release)
 endif (CMAKE_BUILD_TYPE STREQUAL "Debug")
 
